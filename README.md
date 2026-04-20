@@ -2,7 +2,7 @@
 
 # Study Jam #4 — Website Development
 
-### *From Frontend to Backend: Next.js Meets Golang* | #ProductSeries
+### _From Frontend to Backend: Next.js Meets Golang_ | #ProductSeries
 
 ## 🎯 Case Study
 
@@ -32,7 +32,7 @@ todo-app-fe/
 
 Make sure you have installed:
 
-* Node.js (latest version recommended)
+- Node.js (latest version recommended)
 
 ---
 
@@ -41,13 +41,13 @@ Make sure you have installed:
 1. Clone this repository
 
    ```bash
-   git clone https://github.com/sulthonaw/todo-app-fe.git
+   git clone https://github.com/jevvonn/todo-app-fe-gdgoc.git
    ```
 
 2. Navigate to the project folder
 
    ```bash
-   cd todo-app-fe
+   cd todo-app-fe-gdgoc
    ```
 
 3. Install dependencies
@@ -56,7 +56,7 @@ Make sure you have installed:
    npm install
    ```
 
-4. Run the backend (separate repo: `todo-app-be`)
+4. Run the backend (separate repo: `todo-app-be-gdgoc`)
 
 5. Run the frontend
 
@@ -68,8 +68,8 @@ Make sure you have installed:
 
 ## 🔗 Notes
 
-* Make sure the backend (`todo-app-be`) is running before starting the frontend
-* By default, the frontend runs on:
+- Make sure the backend (`todo-app-be-gdgoc`) is running before starting the frontend
+- By default, the frontend runs on:
 
   ```
   http://localhost:3000
