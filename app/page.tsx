@@ -69,24 +69,45 @@ export default function Home() {
             placeholder="Add task..."
             className="flex-1 px-3 py-2 rounded-xl text-slate-800 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-300"
           />
-          <button className="px-4 py-2 rounded-xl bg-linear-to-r from-red-400 to-orange-400 text-white">Add</button>
+          <button className="px-4 py-2 rounded-xl bg-linear-to-r from-red-400 to-orange-400 text-white">
+            Add
+          </button>
         </form>
 
         <ul className="space-y-2">
           {todos.map((todo: any) => (
-            <li key={todo.id} className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-gray-100">
-              <input type="checkbox" checked={todo.done} onChange={() => toggleDone(todo)} className="accent-green-400" />
+            <li
+              key={todo.id}
+              className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-gray-100"
+            >
+              <input
+                type="checkbox"
+                checked={todo.done}
+                onChange={() => toggleDone(todo)}
+                className="accent-green-400"
+              />
 
               {editingId === todo.id ? (
                 <>
-                  <input value={editingTitle} onChange={(e) => setEditingTitle(e.target.value)} className="flex-1 px-2 py-1 text-slate-700 rounded-lg border border-gray-200 focus:outline-none" />
-                  <button onClick={() => updateTodo(todo.id)} className="text-sm text-green-500">
+                  <input
+                    value={editingTitle}
+                    onChange={(e) => setEditingTitle(e.target.value)}
+                    className="flex-1 px-2 py-1 text-slate-700 rounded-lg border border-gray-200 focus:outline-none"
+                  />
+                  <button
+                    onClick={() => updateTodo(todo.id)}
+                    className="text-sm text-green-500"
+                  >
                     Save
                   </button>
                 </>
               ) : (
                 <>
-                  <span className={`flex-1 ${todo.done ? "line-through text-gray-400" : "text-gray-700"}`}>{todo.title}</span>
+                  <span
+                    className={`flex-1 ${todo.done ? "line-through text-gray-400" : "text-gray-700"}`}
+                  >
+                    {todo.title}
+                  </span>
                   <button
                     onClick={() => {
                       setEditingId(todo.id);
@@ -99,7 +120,10 @@ export default function Home() {
                 </>
               )}
 
-              <button onClick={() => deleteTodo(todo.id)} className="text-sm text-red-400">
+              <button
+                onClick={() => deleteTodo(todo.id)}
+                className="text-sm text-red-400"
+              >
                 Delete
               </button>
             </li>
